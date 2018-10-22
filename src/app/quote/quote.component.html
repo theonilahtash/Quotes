@@ -1,0 +1,20 @@
+<h1>Best Inspirational Quotes</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    <div class="row" *ngFor="let quote of quotes;let i = 'index'">
+    <div class="row">
+        <h4 id="{{i}}" appStrikethrough>{{quote.author}} due on {{quote.completeDate|date|uppercase}}</h4>
+        <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
+    </div>
+
+    <div class="row" *ngIf="quote.showDescription">
+    <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+</div>
+
+</div>
+
+</div>
+ <p  *ngIf='quotes.length > 4'>Some of the best life touching quotes</p>

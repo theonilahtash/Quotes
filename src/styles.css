@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: blue;
+    font-size: 2em;
+    background-image: url("http://a1star.com/images/mad-space.gif");
+  }
+  ul{
+     list-style-type: none;
+  }
+  h4{
+     color: blue;
+  }
+  h1{
+      text-align: center;
+     color: chocolate;
+     border: 3px solid blue;
+     font-style: italic;
+     /* padding: 20px;
+     margin: 25px;
+     width: 600px; */
+     /* text-align: center; */
+  }
+  p {
+     color: chocolate;
+     background-color:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50tO0bt_epTMPVcAGnaX22DBbroRefZeq2MYTRsm-B1cVwl0kw);
+    }
+    .button {
+        color:red;
+    }
+    img{
+       image-rendering: optimizeQuality;
+       initial-letter-align: left;
+    }
