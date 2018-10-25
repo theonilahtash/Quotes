@@ -1,11 +1,12 @@
 <p>{{quote.description}}</p>
-<p>This quote was completed on {{quote.completeDate|dateCount}} days</p>
+<p>This quote was completed in {{quote.completeDate|dateCount}} days</p>
 
 <div class="container">
     <p>Author name:{{quote.author}}</p>
     <h3>Votes:{{quote.upVotes}}</h3>
+    <h3>Votes:{{quote.downVotes}}</h3>
     <div class="button">
-    <button class="btn btn-success" (click)='upVote()' click><img width="30" height="30" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/thumbs-up-circle-blue-512.png" alt=""> {{quote.upVote}} </button>
-    <button class="btn btn-danger" (click)='downVote()' click><img width="30" height="30" src="https://idmd.ca/wp-content/uploads/2016/06/thumbsdown.png"> {{quote.downVote}} </button>
+    <button (click)='upVote()' click><img width="50" height="50" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/thumbs-up-circle-blue-512.png" alt=""> {{quote.upVote}} </button>
+    <button (click)='downVote()' click><img width="50" height="50" src="https://idmd.ca/wp-content/uploads/2016/06/thumbsdown.png"> {{quote.downVote}} </button>
     </div>
 <button  class="btn btn-danger"(click) = 'quoteDelete(true)'> Delete Quote</button>
