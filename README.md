@@ -1,4 +1,4 @@
-|# Quotes
+# Quotes
 
 ### Compiled by:
  #### Theonilah Owali
